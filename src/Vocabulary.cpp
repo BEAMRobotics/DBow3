@@ -1138,7 +1138,7 @@ void Vocabulary::save(cv::FileStorage &f,
     for(pit = children.begin(); pit != children.end(); pit++)
     {
       const Node& child = m_nodes[*pit];
-      std::cout<<m_nodes[*pit].id<<" ";
+      // std::cout<<m_nodes[*pit].id<<" ";
 
       // save node data
       f << "{:";
@@ -1155,7 +1155,7 @@ void Vocabulary::save(cv::FileStorage &f,
       }
     }
   }
-  std::cout<<"\n";
+  //std::cout<<"\n";
 
   f << "]"; // nodes
 
